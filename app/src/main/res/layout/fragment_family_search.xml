@@ -1,0 +1,55 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context="com.rds.ftms.fragment.FragmentFamilySearch">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#e1e1e1"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:paddingBottom="7dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:paddingTop="10dp">
+
+        <com.rds.ftms.ui.module.SearchEditText
+            android:id="@+id/query"
+            android:layout_width="match_parent"
+            android:layout_height="34dp"
+            android:layout_centerVertical="true"
+            android:layout_weight="5"
+            android:background="@drawable/seabar_input"
+            android:drawableLeft="@drawable/search_bar_icon_normal"
+            android:drawableRight="@drawable/ic_edit_input_clear"
+            android:hint="搜索"
+            android:imeOptions="actionSearch"
+            android:paddingBottom="5dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#333"
+            android:textColorHint="#aaa"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scrollbarStyle="outsideInset"
+            android:scrollbars="vertical">
+
+            <ListView
+                android:id="@+id/search_listview"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:divider="#00000000"
+                android:dividerHeight="5dp" />
+        </LinearLayout>
+
+
+
+</LinearLayout>
